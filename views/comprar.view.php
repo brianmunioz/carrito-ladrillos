@@ -7,7 +7,7 @@
          
             <h1><?php echo $prod['nombre']  ?></h1>
             <h3>$<?php echo $prod['precio']  ?> c/u - Cantidad: <?php echo $prod['cantidad']  ?></h3>
-            <?php $totalCarrito += $prod['precio'];?>
+            <?php $totalCarrito += $prod['precio'] *  $prod['cantidad'];?>
             
         <?php endforeach; ?>
         <h2>Total: $<?php echo $totalCarrito ?></h2>
