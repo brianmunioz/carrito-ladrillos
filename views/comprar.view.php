@@ -20,7 +20,7 @@
 
 <script>
   // Agrega credenciales de SDK
-  const mp = new MercadoPago("APP_USR-3d0860ab-92c9-4f26-9c31-7097822aa5f3", {
+  const mp = new MercadoPago("tu clave publica", {
     locale: "es-AR",
   });
 
