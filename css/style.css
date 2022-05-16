@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-family: 'Russo One', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+h1.title{
+    font-size: 2rem;
+    font-family: 'Russo One', sans-serif;
+    font-family: 'Rubik Glitch', cursive;
+    padding: 1px;
+
+}
+h2,h3,h4,h5,p{
+    font-family: 'League Gothic', sans-serif;  
+    margin: 1rem 0;
+}
+.prod{
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+    padding: 50px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    text-align: center;
+    border-radius: 53px;
+}
+a img.btn-mas {
+    width: 45px;
+    height: 45px;
+}
+.prod h1{
+    background: greenyellow;
+    width: 80%;
+    position: relative;
+    margin: 0 auto;
+    top: -24px;
+    font-size: 20px;
+}
+.prod h3{
+    position: relative;
+    bottom: 22px;
+}
+.prod img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Space Mono', monospace;
+}
+.contenedor{
+    max-width: 100%
+    
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    padding: 10px 0;
+    border-bottom: 1px solid black;
+    margin-bottom: 1rem;
+    
+}
+
+.logo a{
+    font-size: 1.5rem;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.carrito img{
+    width: 50px;
+}
+.carrito span{
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    padding: 3px;
+    color: white;
+    position: relative;
+    top: -20px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+input {
+    width: 80%;
+    display: block;
+    margin: 0.5rem auto;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: 10px;
+}
+form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+input.cantidad {
+    border: none;
+    width: 25px;
+    border-bottom: 1px solid black;
+    margin-bottom: 1rem;
+    padding: 15px;
+}
+input[type="submit"] {
+    border: none;
+    border-radius: 5px;
+    background: black;
+    color: white;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+a.btn-finalizar {
+    text-align: center;
+    display: block;
+    margin-top: 2rem;
+    font-weight: bold;
+    color: darkred;
+}
+.footer{
+    margin-top: 4rem;
+   
+    height: 50px;
+    padding: 10px 20px;
+    text-align: center;
+}
+.group-cantidad{
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 500px ) {
+    .header{
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+    .grid{
+        grid-template-columns: 1fr;
+    }
+
+}
+@media (max-width: 1200px ) {
+    .prod h1{
+      
+        font-size: 15px;
+    }
+
+}
