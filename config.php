@@ -1,8 +1,9 @@
 <?php 
 
     $bd = array(
-        'bdname'=>'epiz_31739324_carrito',
-        'user'=>'epiz_31739324',
-        'pass'=>'xmYE5L0wiU8'
+        'bdname'=>'nombre de base de datos',
+        'user'=>'usuario_bd',
+        'pass'=>'contraseña',
+        'host'=>'tu host'
     );
-    $ruta = 'http:localhost/ecommerce';
+    $ruta = 'http:turuta.com';
