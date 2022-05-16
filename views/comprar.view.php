@@ -7,7 +7,7 @@
          
             <h1><?php echo $prod['nombre']  ?></h1>
             <h3>$<?php echo $prod['precio']  ?> c/u - Cantidad: <?php echo $prod['cantidad']  ?></h3>
-            <?php $totalCarrito += $prod['precio'];?>
+            <?php $totalCarrito += $prod['precio'] *  $prod['cantidad'];?>
             
         <?php endforeach; ?>
         <h2>Total: $<?php echo $totalCarrito ?></h2>
@@ -20,7 +20,7 @@
 
 <script>
   // Agrega credenciales de SDK
-  const mp = new MercadoPago("APP_USR-3d0860ab-92c9-4f26-9c31-7097822aa5f3", {
+  const mp = new MercadoPago("tu clave publica", {
     locale: "es-AR",
   });
 
