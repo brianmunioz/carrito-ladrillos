@@ -1,7 +1,8 @@
 <?php session_start();
 require 'vendor/autoload.php';
+include 'config.php';
 $totalCarrito = 0;
-MercadoPago\SDK::setAccessToken('APP_USR-1357491259909844-051504-9be83fcae76e39aef21e70435b41e2ee-201929291');
+MercadoPago\SDK::setAccessToken('tu access token');
 $preference = new MercadoPago\Preference();
 
 
@@ -21,9 +22,9 @@ if(isset($_SESSION['carrito'])){
     }
     $preference->items = $products;
     $preference->back_urls = array(
-        "success"=>"http://localhost/ecommerce/pagoexitoso.php",
-        "failure"=>"http://localhost/ecommerce/fallo.php",
-        "pending"=>"http://localhost/ecommerce/pendiente.php"
+        "success"=>$ruta."/pagoexitoso.php",
+        "failure"=>$ruta."/fallo.php",
+        "pending"=>$ruta."/pendiente.php"
 
     );
     $preference->auto_return = "approved";
