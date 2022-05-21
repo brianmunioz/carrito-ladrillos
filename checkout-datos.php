@@ -1,8 +1,7 @@
 <?php session_start();
 error_reporting(0);
-if(!isset($_SESSION['carrito'])){
-    header('Location: index.php');
-}
+if(!isset($_SESSION['carrito']) )header('Location: index.php');
+if(isset($_SESSION['datos'])) header('Location: comprar.php');
 include 'functions.php';
 if( $_SERVER['REQUEST_METHOD'] == 'POST' ){
     $errores = '';
