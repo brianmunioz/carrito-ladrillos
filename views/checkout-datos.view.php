@@ -17,5 +17,8 @@
         <input type="tel" name="tel" placeholder="Teléfono" required>   
         <input type="submit" class="btn-coninuar" value="continuar">
     </form>
+    <?php if(isset($_SESSION['errores'])): ?>
+        <h2 style="color:red;text-align:center;font-size:20px"> <?php echo$_SESSION['errores'] ?></h2>
+    <?php endif ?>
 </div>
 <?php include 'footer.php'?>
