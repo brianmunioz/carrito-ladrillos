@@ -1,8 +1,8 @@
 <?php session_start();
 include 'config.php';
 include 'functions.php';
-$id = $_GET['id'];
-if(!$id){
+$id = limpiarDatos($_GET['id']);
+if(!$id or empty($id)){
     header('Location: index.php');
 }
 $conn = conexion($bd);
