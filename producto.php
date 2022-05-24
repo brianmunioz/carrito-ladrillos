@@ -2,7 +2,7 @@
 include 'config.php';
 include 'functions.php';
 $id = limpiarDatos($_GET['id']);
-if(!$id or empty($id)){
+if(!$id || empty($id)){
     header('Location: index.php');
 }
 $conn = conexion($bd);
