@@ -10,6 +10,8 @@ if($conn){
     $statement = $conn->prepare('SELECT * FROM productos WHERE id = ?');
     $statement->execute([$id]);
     $prod = $statement->fetch();
+    if(empty($prod)) header('Location: index.php');
+
 }
 else{
     echo 'error';
